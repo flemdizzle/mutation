@@ -29,7 +29,7 @@ class Mutation
       return false if n === result
 
       #set baseline points based off length comparison
-      n[:points] = result.length - n[:name].length
+      n[:points] = result.length - (n[:name].length - result.length).abs
 
       #assigns points based off matching letters
       result.split("").each_with_index do |r, i|
