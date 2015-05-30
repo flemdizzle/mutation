@@ -37,11 +37,14 @@ class Mutation
       end
 
     end
-    #compare length
-    #compare string letter values
-    #pick best fit or match
-    #return true if not match
 
+    offspring.sort { |a, b| a[:points] <=> b[:points] }.reverse
+
+    #would be nice to have a way to mix the offspring
+    #with the highest points
+    specimen = offspring.first
+
+    true
   end
 
 end
