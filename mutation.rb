@@ -44,6 +44,8 @@ class Mutation
     #with the highest points
     specimen = offspring.first
 
+    offspring = []
+
     true
   end
 
